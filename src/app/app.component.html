@@ -1,18 +1,21 @@
 <mat-toolbar>
   Mii Blog
   <div class="nav-container">
-    <a>Posts</a>
-    <a>Admin Page</a>
+    <a routerLink="/line">Posts</a>
+    <a routerLink="/admin">Admin Page</a>
   </div>
 
   <span class="fill-space"></span>
 
   <div class="auth-nav-block">
-    <a>Sign In</a>
-    <a>Sign Up</a>
+    <a routerLink="/signin">Sign In</a>
+    <a routerLink="/signup">Sign Up</a>
     <a>Log Out</a>
   </div>
 </mat-toolbar>
+
+<router-outlet></router-outlet>
+
 <mat-toolbar class="footer">winter is mii</mat-toolbar>
 
 
