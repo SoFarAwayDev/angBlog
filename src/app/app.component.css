@@ -35,3 +35,8 @@
   justify-content: space-around;
   cursor: pointer;
 }
+
+.nav-block a, .nav-block a:hover, .nav-block a:active{
+  color: white;
+  text-decoration: none;
+}
