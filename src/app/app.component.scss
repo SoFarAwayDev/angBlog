@@ -18,10 +18,10 @@
   width: 200px;
   display: flex;
   justify-content: space-around;
-}
 
-.nav-container a{
-  cursor: pointer;
+  a{
+    cursor: pointer;
+  }
 }
 
 .fill-space{
@@ -36,7 +36,9 @@
   cursor: pointer;
 }
 
-.nav-block a, .nav-block a:hover, .nav-block a:active{
-  color: white;
-  text-decoration: none;
+.nav-block{
+  a, a:hover, a:active{
+      color: white;
+      text-decoration: none;
+    }
 }
