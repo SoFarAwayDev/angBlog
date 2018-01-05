@@ -15,7 +15,7 @@ export function lineReducer(state = initialState, action: LineActions.LineAction
     case LineActions.SHOW_LINE:
       return {
         ...state,
-        line: [action.payload.line]
+        line: [...action.payload.line]
       };
     default:
       return state;

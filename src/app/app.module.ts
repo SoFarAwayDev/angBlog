@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { LineEffects } from './posts/store/line.effects';
     MatToolbarModule,
     MatMenuModule,
     AppRoutingModule,
+    HttpClientModule,
     StoreModule.forRoot(reducers),
     EffectsModule.forRoot([LineEffects]),
   ],

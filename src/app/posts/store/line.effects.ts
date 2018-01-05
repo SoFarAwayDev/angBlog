@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Actions, Effect } from '@ngrx/effects';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/withLatestFrom';
+import 'rxjs/add/operator/map';
 import { HttpClient} from '@angular/common/http';
 
 import * as LineActions from '../store/line.actions';

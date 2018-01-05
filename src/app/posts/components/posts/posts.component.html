@@ -1,4 +1,11 @@
 <div>
-  posts works!
+  <div
+    *ngFor="let post of (lineState | async).line; let i = index">
+
+    <span>Title</span>:<span [innerText]="post.title"></span><br/>
+    <span>Text</span>:<span [innerText]="post.text"></span><br/>
+    <span>Author</span>:<span [innerText]="post.author"></span><br/>
+    <hr/>
+  </div>
 
 </div>
