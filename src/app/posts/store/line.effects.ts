@@ -14,7 +14,7 @@ export class LineEffects {
   lineFetch = this.actions$
     .ofType(LineActions.GET_LINE)
     .switchMap((action: LineActions.GetLine) => {
-      return this.httpClient.get<Post[]>('https://just-opposite-thing.firebaseio.com', {
+      return this.httpClient.get<Post[]>('https://just-opposite-thing.firebaseio.com/line.json', {
         observe: 'body',
         responseType: 'json'
       })
